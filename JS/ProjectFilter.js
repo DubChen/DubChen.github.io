@@ -14,6 +14,7 @@ filtersElem.addEventListener( 'click', function( event ) {
   if ( !matchesSelector( event.target, 'w3-btn' ) ) {
     return;
   }
+  alert("Button clicked!");
   var filterValue = event.target.getAttribute('data-filter');
   iso.arrange({ filter: filterValue });
 });
