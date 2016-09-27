@@ -2,11 +2,13 @@
 // Uses jQuery and Isotope packages
 var $grid = $('.grid').imagesLoaded( function() {
   // init Isotope after all images have loaded
-  $grid.isotope({
+  alert('hi');
+});
+
+$grid.isotope({
     itemSelector: '.element-item',
     layoutMode: 'fitRows'
   });
-});
 
 // bind filter button click
 $('.filters-button-group').on( 'click', 'button', function() {
