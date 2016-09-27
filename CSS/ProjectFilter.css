@@ -18,4 +18,7 @@
   float: left;
 }
 
-
+.element-item > * {
+  margin: 0;
+  padding: 0;
+}
