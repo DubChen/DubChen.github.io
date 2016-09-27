@@ -11,8 +11,8 @@ var iso = new Isotope( '.grid', {
 var filtersElem = document.querySelector('.filters-button-group');
 filtersElem.addEventListener( 'click', function( event ) {
   // only work with buttons
-  if ( !matchesSelector( event.target, 'w3-btn' ) ) {
-      alert("Button clicked!");
+  if ( !matches( event.target, 'w3-btn' ) ) {
+      alert(event.target);
     return;
   }
   var filterValue = event.target.getAttribute('data-filter');
@@ -29,7 +29,7 @@ for ( var i=0, len = buttonGroups.length; i < len; i++ ) {
 function radioButtonGroup( buttonGroup ) {
   buttonGroup.addEventListener( 'click', function( event ) {
     // only work with buttons
-    if ( !matchesSelector( event.target, 'w3-btn' ) ) {
+    if ( !matches( event.target, 'w3-btn' ) ) {
       return;
     }
     buttonGroup.querySelector('.is-checked').classList.remove('is-checked');
