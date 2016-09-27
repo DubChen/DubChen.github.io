@@ -12,6 +12,7 @@ var $grid = $('.grid').imagesLoaded( function() {
 $('.filters-button-group').on( 'click', 'button', function() {
   var filterValue = $( this ).attr('data-filter');
   $grid.isotope({ filter: filterValue });
+  alert('Hi');
 });
 // change is-checked class on buttons
 $('.button-group').each( function( i, buttonGroup ) {
