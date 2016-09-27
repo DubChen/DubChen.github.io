@@ -8,14 +8,3 @@
   background: #28F;
   text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
 }
-
-/* ---- isotope ---- */
-
-/* ---- .element-item ---- */
-
-.element-item {
-  position: relative;
-  float: left;
-}
-
-
