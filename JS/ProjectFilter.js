@@ -2,7 +2,7 @@
 // Uses jQuery and Isotope packages
 $(window).load(function() {
   // init Isotope after all images have loaded
-  var $grid = $('.grid').isotope({
+  $('.grid').isotope({
     itemSelector: '.element-item',
     layoutMode: 'fitRows'
   });
