@@ -1,9 +1,6 @@
 // Script for filtering functionality on projects for home page
 // Uses jQuery and Isotope packages
-
-
-// layout and init Isotope after images load
-var $grid = $('.grid').imagesLoaded( function() {
+$(window).load(function() {
   // init Isotope after all images have loaded
   $grid.isotope({
     itemSelector: '.element-item',
