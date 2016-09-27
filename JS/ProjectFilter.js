@@ -2,7 +2,7 @@
 // Uses jQuery and Isotope packages
 var $grid = $('.grid').imagesLoaded( function() {
   // init Isotope after all images have loaded
-  alert('hi');
+  alert("hi");
 });
 
 $grid.isotope({
