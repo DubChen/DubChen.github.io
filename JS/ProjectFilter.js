@@ -4,6 +4,7 @@ var $grid = $('.grid').imagesLoaded( function() {
   // init Isotope after all images have loaded
   $grid.isotope({
     itemSelector: '.element-item',
+    layoutMode: 'fitRows',
     percentPosition:true
   });
 });
