@@ -4,8 +4,8 @@
 /* Button highlighting functionality added for Isotope filtering */
 
 .w3-btn.is-checked {
-  color: #fff;
-  background: #000;
+  color: #000;
+  background: #fff;
 }
 
 /* ---- isotope ---- */
