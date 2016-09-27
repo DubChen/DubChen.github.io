@@ -12,9 +12,9 @@ var filtersElem = document.querySelector('.filters-button-group');
 filtersElem.addEventListener( 'click', function( event ) {
   // only work with buttons
   if ( !matchesSelector( event.target, 'w3-btn' ) ) {
+      alert("Button clicked!");
     return;
   }
-  alert("Button clicked!");
   var filterValue = event.target.getAttribute('data-filter');
   iso.arrange({ filter: filterValue });
 });
