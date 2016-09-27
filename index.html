@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="CSS/w3.css">
 <link rel="stylesheet" href="CSS/Raleway.css">
 <link rel="stylesheet" href="CSS/font-awesome-4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="CSS/ProjectFilter.css">
 
 <style>
 html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
@@ -56,44 +57,44 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <h1><b>Projects</b></h1>
     <div class="w3-section w3-bottombar w3-padding-16">
       <span class="w3-margin-right">Filter:</span>
-      <button class="w3-btn">ALL</button>
-      <button class="w3-btn w3-white"><i class="fa fa-bar-chart w3-margin-right"></i>Research</button>
-      <button class="w3-btn w3-white"><i class="fa fa-comments w3-margin-right"></i>Science Communication</button>
-      <button class="w3-btn w3-white"><i class="fa fa-gamepad w3-margin-right"></i>For Fun</button>
+      <button class="w3-btn w3-white is-checked" data-filter="*">ALL</button>
+      <button class="w3-btn w3-white" data-filter="research"><i class="fa fa-bar-chart w3-margin-right"></i>Research</button>
+      <button class="w3-btn w3-white" data-filter="scicomm"><i class="fa fa-comments w3-margin-right"></i>Science Communication</button>
+      <button class="w3-btn w3-white" data-filter="fun"><i class="fa fa-gamepad w3-margin-right"></i>For Fun</button>
     </div>
   </header>
   
   <!-- First Photo Grid-->
-  <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
+  <div class="w3-row-padding grid">
+    <div class="w3-third w3-container w3-margin-bottom element-item" data-category="research">
       <img src="img_mountains.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Lorem Ipsum</b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
-    <div class="w3-third w3-container w3-margin-bottom">
+    <div class="w3-third w3-container w3-margin-bottom element-item" data-category="research">
       <img src="img_lights.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Lorem Ipsum</b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
-    <div class="w3-third w3-container w3-margin-bottom">
+    <div class="w3-third w3-container w3-margin-bottom element-item" data-category="scicomm">
       <img src="img_lights.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Lorem Ipsum</b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
-    <div class="w3-third w3-container w3-margin-bottom">
+    <div class="w3-third w3-container w3-margin-bottom element-item" data-category="fun">
       <img src="img_lights.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Lorem Ipsum</b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
-    <div class="w3-third w3-container">
+    <div class="w3-third w3-container element-item" data-category="scicomm">
       <img src="img_nature.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Lorem Ipsum</b></p>
@@ -183,9 +184,9 @@ function w3_close() {
 }
 </script>
 
-<!-- Isotope scripts (e.g. filtering) -->
+<!-- Isotope scripts for filtering -->
 <script src="JS/isotope.pkgd.min.js"></script>
-
+<script src="JS/ProejctFilter.js"></script>
 
 </body>
 </html>
