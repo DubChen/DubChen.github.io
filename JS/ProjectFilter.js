@@ -5,7 +5,10 @@ var $grid = $('.grid').imagesLoaded( function() {
   $grid.isotope({
     itemSelector: '.element-item',
     layoutMode: 'fitRows',
-    percentPosition:true
+    percentPosition:true,
+    fitRows: {
+      columnWidth: 'element-sizer'
+    }
   });
 });
 
