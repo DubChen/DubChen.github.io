@@ -8,3 +8,7 @@
   background: #28F;
   text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
 }
+
+.element-item,.element-sizer{
+  width:33.33333%;
+}
