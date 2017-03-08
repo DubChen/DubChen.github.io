@@ -1,191 +1,209 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
+	<head>
+		<title>Will Chen</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
 
-<title>Will Chen</title>
-<meta name="WillChenHomePage" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="CSS/w3.css">
-<link rel="stylesheet" href="CSS/Raleway.css">
-<link rel="stylesheet" href="CSS/font-awesome-4.6.3/css/font-awesome.min.css">
-<link rel="stylesheet" href="CSS/ProjectFilter.css">
+		<!-- Header -->
+			<div id="header">
 
-<style>
-html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-.w3-sidenav a,.w3-sidenav h4 {font-weight:bold}
-</style>
+				<div class="top">
 
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+							<h1 id="title">Will Chen</h1>
+							<p>Quantitative Ecologist</p>
+						</div>
 
-<body class="w3-light-grey w3-content" style="max-width:1600px">
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
 
-<!-- Sidenav/menu -->
-<nav class="w3-sidenav w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidenav"><br>
-  <div class="w3-container">
-    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu">
-      <i class="fa fa-remove"></i>
-    </a>
-    <img src="Pics/Optimized-CroppedWillPic.png" style="width:45%;" class="w3-round"><br><br>
-    <h4 class="w3-padding-0"><b>Will Chen</b></h4>
-  </div>
-  <a href="#" class="w3-padding w3-text-teal">Home</a>
-  <a href="#" class="w3-padding">About</a>
-  <a href="#" class="w3-padding">Publications</a>
-  <a href="#" class="w3-padding">CV</a>
-  <a href="#" class="w3-padding">Blog</a>
-  <a href="#" class="w3-padding">Contact</a>
-   
-  <div class="w3-section w3-padding-top w3-large">
-    <a href="mailto:wchen1642@gmail.com" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block" target="_top"><i class="fa fa-envelope"></i></a>
-    <a href="https://twitter.com/ChenWillMath" class="w3-hover-white w3-hover-text-light-blue w3-show-inline-block" target="_blank"><i class="fa fa-twitter"></i></a>
-    <a href="https://www.linkedin.com/in/chenwillmath" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block" target="_blank"><i class="fa fa-linkedin"></i></a>
-    <a href="https://github.com/DubChen" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block" target="_blank"><i class="fa fa-github"></i></a>
+								Prologue's nav expects links in one of two formats:
 
+								1. Hash link (scrolls to a different section within the page)
 
-  </div>
-</nav>
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
 
-<!-- Overlay effect when opening sidenav on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+								2. Standard link (sends the user to another page/site)
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px">
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
 
-  <!-- Header -->
-  <header class="w3-container">
-    <a href="#"><img src="img_avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
-    <span class="w3-opennav w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-    <h1><b>Projects</b></h1>
-    <div class="w3-section w3-bottombar w3-padding-16">
-      <span class="w3-margin-right" float="left">Filter:</span>
-      <div class="button-group filters-button-group" float="left">
-        <button class="w3-btn button is-checked" data-filter="*">ALL</button>
-        <button class="w3-btn button" data-filter=".research"><i class="fa fa-bar-chart w3-margin-right"></i>Research</button>
-        <button class="w3-btn button" data-filter=".scicomm"><i class="fa fa-comments w3-margin-right"></i>Science Communication</button>
-        <button class="w3-btn button" data-filter=".fun"><i class="fa fa-gamepad w3-margin-right"></i>For Fun</button>
-      </div>
-    </div>
-  </header>
-  
-  <!-- Project Grid-->
-  <div class="w3-row-padding grid">
-    <div class="w3-third w3-container w3-margin-bottom element-item research " data-category="research">
-      <a href="https://google.com"><img src="http://thevideoanalyst.com/wp-content/uploads/2010/10/research-keyboard.jpg" alt="Research" style="width:100%" class="w3-hover-opacity"></a>
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
+							-->
+							<ul>
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+								<li><a href="#projects" id="projects-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Projects</span></a></li>
+								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
 
-    <div class="w3-third w3-container w3-margin-bottom element-item scicomm " data-category="scicomm">
-      <img src="img_lights.jpg" alt="Scicomm" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
+				</div>
 
-    <div class="w3-third w3-container w3-margin-bottom element-item research " data-category="research">
-      <a href="https://google.com"><img src="http://thevideoanalyst.com/wp-content/uploads/2010/10/research-keyboard.jpg" alt="Research" style="width:100%" class="w3-hover-opacity"></a>
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
+				<div class="bottom">
 
-    <div class="w3-third w3-container w3-margin-bottom element-item fun " data-category="fun">
-      <img src="img_lights.jpg" alt="Fun" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-  </div>
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://twitter.com/ChenWillMath" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+							<li><a href="https://github.com/DubChen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/chenwillmath/" class="icon fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+							<li><a href="mailto:wchen1642@gmail.com" class="icon fa-envelope" target="_blank"><span class="label">Email</span></a></li>
+						</ul>
 
-<!-- 
-  <footer class="w3-container w3-padding-32 w3-white">
-    <div class="w3-row-padding">
-      <div class="w3-third">
-          <a class="twitter-timeline"  href="https://twitter.com/ChenWillMath" data-widget-id="722485127234740224">Tweets by @ChenWillMath</a>
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </div>
-    </div>
-  </footer>
--->          
+				</div>
 
+			</div>
 
-  <!-- Pagination -->
-<!--
-  <div class="w3-center w3-padding-32">
-    <ul class="w3-pagination">
-      <li><a class="w3-black" href="#">1</a></li>
-      <li><a class="w3-hover-black" href="#">2</a></li>
-      <li><a class="w3-hover-black" href="#">3</a></li>
-      <li><a class="w3-hover-black" href="#">4</a></li>
-      <li><a class="w3-hover-black" href="#">»</a></li>
-    </ul>
-  </div>
--->
-  <!-- Footer -->
-<!--
-  <footer class="w3-container w3-padding-32 w3-white">
-  <div class="w3-row-padding">
-    <div class="w3-third">
-      <h3>FOOTER</h3>
-      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </div>
-  
-    <div class="w3-third">
-          <img src="img_workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large">Lorem</span><br>
-          <span>Sed mattis nunc</span>
-        </li>
-        <li class="w3-padding-16">
-          <img src="img_gondol.jpg" class="w3-left w3-margin-rig
-      <h3>BLOG POSTS</h3>
-      <ul class="w3-ul w3-hoverable">
-        <li class="w3-padding-16">ht" style="width:50px">
-          <span class="w3-large">Ipsum</span><br>
-          <span>Praes tinci sed</span>
-        </li>
-      </ul>
-    </div>
+		<!-- Main -->
+			<div id="main">
 
-    <div class="w3-third">
-      <h3>POPULAR TAGS</h3>
-      <p>
-        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">London</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">DIY</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Family</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Shopping</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Games</span>
-      </p>
-    </div>
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
 
-  </div>
-  </footer>
--->
+							<header>
+								<h2 class="alt">Hi! Welcome to my web page!
+							</header>
 
-<!-- End page content -->
-</div>
+							<footer>
+								<a href="#projects" class="button scrolly">Explore</a>
+							</footer>
 
-<script>
-// Script to open and close sidenav
-function w3_open() {
-    document.getElementById("mySidenav").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-    document.getElementById("mySidenav").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-</script>
+						</div>
+					</section>
 
-<!-- Isotope scripts for filtering -->
-<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
-<script src="https://npmcdn.com/imagesloaded@4.1.1/imagesloaded.pkgd.js"></script>
-<script src="JS/ProjectFilter.js"></script>
+				<!-- Projects -->
+					<section id="projects" class="two">
+						<div class="container">
 
-</body>
+							<header>
+								<h2>Projects</h2>
+							</header>
+
+							<p>Here are my projects!</p>
+
+							<div class="row">
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+										<header>
+											<h3>Blah</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+										<header>
+											<h3>Foo</h3>
+										</header>
+									</article>
+								</div>
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+										<header>
+											<h3>Bar</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+										<header>
+											<h3>Test</h3>
+										</header>
+									</article>
+								</div>
+								<div class="4u$ 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+										<header>
+											<h3>Hmm</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+										<header>
+											<h3>Whatever</h3>
+										</header>
+									</article>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+				<!-- About Me -->
+					<section id="about" class="three">
+						<div class="container">
+
+							<header>
+								<h2>About Me</h2>
+							</header>
+
+							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+
+							<p>I am amazing.</p>
+
+						</div>
+					</section>
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+
+							<p>Ask me anything!</p>
+
+							<form method="post" action="#">
+								<div class="row">
+									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="12u$">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="12u$">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
-
